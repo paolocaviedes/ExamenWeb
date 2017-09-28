@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Eterno Campeón</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+    function openContent(evt, mainContent) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(mainContent).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+  </head>
+  <body>
+  
+  <!-- Static navbar -->
+      <nav class="navbar navbar-default superiorbar2">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-left" href="#"><img src="img/logo-colocolo.png" class="" height="50" width="50"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li class=""><a href="#">Home</a></li>
+              <li><a href="#">Nosotros</a></li>
+               <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+  
+  <!-- Container Principal -->
+  <div class="container">
+
+  <!-- Contenedor Secundario -->
+  <div class="col-lg-12">
+    
+
+
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ullam blanditiis.</h1>
+    <!-- Contenedor 5 columnas -->
+    <div class=" col-lg-5 well row">      
+          <img src="img/primer-equipo.jpg" class="" width=100%> 
+    </div><!-- End Contenedor 5 columnas -->
+
+  <div class="row">
+    <!-- Contenedor 7 columnas -->
+    <div class=" col-lg-7 contenedorTexto">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sapiente sequi beatae quis. Qui culpa quas consequatur dolor inventore perspiciatis. Necessitatibus inventore eveniet consectetur quia magnam amet vel veritatis quasi!
+          </p>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, amet, sapiente! Quaerat, dicta nesciunt vitae, itaque, rem illum omnis commodi ipsam excepturi praesentium deserunt! Cumque quis beatae perspiciatis ex, maxime.
+          </p>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quis quas ab laudantium placeat atque expedita sit sequi reprehenderit deserunt temporibus beatae, maxime natus dicta accusamus obcaecati velit laborum fuga.
+          </p>
+
+        </div>
+    
+    </div><!-- End Contenedor 7 columnas --></div>
+
+    <!-- 12 Columnas -->
+    <div class="row">
+      <div class="well mainimage">
+      <div class="tab">
+        <button class="tablinks" onclick="openContent(event, 'Tab1')" id="defaultOpen">Tab1</button>
+        <button class="tablinks" onclick="openContent(event, 'Tab2')">Tab2</button>
+      </div>
+        <div id="Tab1" class="tabcontent">
+          <div class="littleMargin">
+        
+            <div class="radio-inline">
+              <label><input type="radio" name="optradio">Option 1</label>
+            </div>
+            <div class="radio-inline">
+              <label><input type="radio" name="optradio">Option 2</label>
+            </div>
+            <div class="radio-inline">
+              <label><input type="radio" name="optradio">Option 3</label>
+            </div>
+          </div>
+
+          <div class="littleMargin">
+            <select>
+              <option value="Opt1">Opt1</option>
+              <option value="Opt2">Opt2</option>
+              <option value="Opt3">Opt3</option>
+              <option value="Opt4">Opt4</option>
+            </select>
+  
+
+          </div>
+
+          <div class="littleMargin">
+          <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+          </div>
+          <div class="littleMargin">
+          <!-- Botón normal -->
+          <button type="button" class="btn btn-default">Normal</button>
+          </div>
+        </div>
+
+      
+
+      <div id="Tab2" class="tabcontent">
+      
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni esse labore expedita atque error est a blanditiis fuga ea consequuntur tempora commodi earum, voluptatum nemo deserunt asperiores pariatur. Quasi, cupiditate.</p>
+         
+      </div>
+    </div><!-- End 12 Columnas -->
+
+  </div><!-- End contenedor Secundario  -->
+<!-- Contenedor tabs -->
+
+</div><!--End Container Principal -->
+
+  
+</div>
+
+
+
+<footer class="navbar footerbar navbar-fixed-bottom">Eterno Campeón</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
